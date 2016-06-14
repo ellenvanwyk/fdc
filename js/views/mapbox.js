@@ -39,7 +39,7 @@ define(["jquery", "marionette", "mapbox-lib", "views/marker", "marker-clusterer"
                     return;
                 }
                 L.mapbox.accessToken = this.opts.accessToken;
-                this.map = L.mapbox.map('map', "mapbox.light", {
+                this.map = L.mapbox.map('map', "mapbox.emerald", {
                     zoomControl: false
                 }).setView(this.opts.center, this.opts.zoom);
                 this.map.reset = true;

@@ -8,7 +8,7 @@ define(["marionette",
         var MapLayout = Marionette.LayoutView.extend({
             regions: {
                 mapboxRegion: ".map",
-                leftPanelRegion: "#left-panel"
+                leftPanelRegion: "#detail-container"
             },
             initialize: function (opts) {
                 _.extend(this, opts);
@@ -38,7 +38,7 @@ define(["marionette",
                     });
                 } else {
                     $('#map').css({
-                        "height": "calc(100vh - 75px)"
+                        "height": "100vh"
                     });
                 }
                 this.leftPanelRegion.$el.show();

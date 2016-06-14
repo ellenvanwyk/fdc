@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Slabo+27px);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
 
 @font-face {
   font-family: ProximaNova;
@@ -36,7 +38,7 @@ html, body {
     color: #000;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-    font-family: 'ProximaNova', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 * {
     -webkit-box-sizing: border-box;
@@ -57,10 +59,14 @@ h1 {
 
 h2 {
     margin: 0;
-    color: #1e9da3;
+    color: #fff;
     font-weight: bold;
     display: inline-block;
-    font-size: 24px;
+    font-size: 1.8em;
+    font-weight:200;
+    background-color:#1d95a4;
+    padding:14px 24px 0;
+    width: 100%;
 }
 
 
@@ -75,13 +81,21 @@ h2.splash{
 }
 
 h3 {
-    padding: 7px 11px 6px;
+    padding: 8px 24px 24px;
     margin: 0;
     color: #fff;
-    background-color: #1e9da3;
-    font-family: 'ProximaNova', sans-serif;
+    background-color: #1d95a4;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 24px;
+}
+
+h3#city-name{
+    margin: 0;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1em;
+    background-color:#1d95a4;
 }
 
 h4{
@@ -103,7 +117,7 @@ h4 a{
 }
 
 p {
-    font-family: 'ProximaNova', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: white;
 }
@@ -153,11 +167,19 @@ footer{
 }
 
 /*********************************** Map ***********************************/
+
+
 #map {
     width: 100%;
     background-color: #EEE;
     height: calc( 100vh - 75px );
     top:-3px;
+}
+
+
+#detail-container{
+    width:380px;
+    order:1;
 }
 
 /****** Splash Page **********/
@@ -297,7 +319,7 @@ footer{
     display: none;
     overflow: hidden;
     z-index: 1000;
-    box-shadow:0 0 14px rgba(94,112,125,0.2);
+    box-shadow:0 0 14px rgba(94,112,155,0.5);
 }
 
 .food-detail {
@@ -333,10 +355,6 @@ footer{
     to   { opacity: 1; }
 }
 
-.info-box h2 {
-    line-height: 1.2em;
-    margin:14px;
-}
 .photo-container { 
     height: 300px;
     background-repeat: no-repeat;
@@ -370,7 +388,7 @@ svg {
 #social-media-handle {
     color: #585858;
     font-size: 1em;
-    padding: 0 14px;
+    padding: 14px;
     margin-top: 0;
     padding-bottom: 2px;
     font-weight: bold;
@@ -387,7 +405,7 @@ svg {
 .food-description {
     color: black;
     font-size: 1em;
-    padding: 0 14px 28px;
+    padding: 0 24px 28px;
     margin: 0;
 }
 
@@ -426,9 +444,9 @@ svg {
     }
     .info-box{
         width: 380px;
-        margin-left:10px;
-        top: 48px;
-        max-height: calc(100vh - 108px);
+        top: 0;
+        top: 40px;
+        height: calc(100vh - 80px);
         position: absolute;
         overflow: scroll;
     }
@@ -612,12 +630,7 @@ svg {
 /* New Styles Sarah Added */
 /**************************/
 .carousel-control {
-    position: absolute;
     text-decoration: none;
-    left: 15px;
-    width: 40px;
-    height: 40px;
-    margin-top: -20px;
     font-size: 60px;
     font-weight: 100;
     line-height: 20px;
@@ -630,6 +643,37 @@ svg {
     opacity: .4;
     filter: alpha(opacity=40);
     padding:5px ;
+    font-size: .8em;
+
+}
+
+.carousel-control__top{
+    position:fixed;
+    top:0;
+    width:380px;
+    background-color:#3c648a;
+    text-align: center;
+    height:40px;
+    color:rgba(204,247,237,.8);
+    text-decoration:none;
+    padding:10px 24px;
+    font-family:Montserrat;
+    text-transform:uppercase;
+    text-align:left;
+}
+.carousel-control__bottom{
+    position:fixed;
+    bottom:0;
+    width:380px;
+    background-color:#3c648a;
+    text-align: center;
+    height:40px;
+    color:rgba(204,247,237,.8);
+    text-decoration:none;
+    padding:10px 24px;
+    font-family:Montserrat;
+    text-transform:uppercase;
+    text-align:left;
 }
 
 .carousel-control.right {
