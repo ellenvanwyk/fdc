@@ -59,12 +59,12 @@ h1 {
 
 h2 {
     margin: 0;
-    color: #fff;
+    color: #1d95a4;
     font-weight: bold;
     display: inline-block;
     font-size: 1.8em;
     font-weight:200;
-    background-color:#1d95a4;
+    background-color:#fff;
     padding:14px 24px 0;
     width: 100%;
 }
@@ -83,8 +83,8 @@ h2.splash{
 h3 {
     padding: 8px 24px 24px;
     margin: 0;
-    color: #fff;
-    background-color: #1d95a4;
+    color: #1d95a4;
+    background-color: #fff;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 24px;
@@ -92,10 +92,10 @@ h3 {
 
 h3#city-name{
     margin: 0;
-    color: #fff;
+    color: #1d95a4;
     font-weight: 200;
     font-size: 1em;
-    background-color:#1d95a4;
+    background-color:#fff;
 }
 
 h4{
@@ -445,10 +445,10 @@ svg {
     .info-box{
         width: 380px;
         top: 0;
-        top: 40px;
-        height: calc(100vh - 80px);
+        top: 67.5px;
+        height: calc(100vh - 67.5px);
         position: absolute;
-        overflow: scroll;
+        overflow:scroll;
     }
     #bottom-nav {
         width: 100%;
@@ -630,55 +630,23 @@ svg {
 /* New Styles Sarah Added */
 /**************************/
 .carousel-control {
-    text-decoration: none;
-    font-size: 60px;
-    font-weight: 100;
-    line-height: 20px;
-    color: #fff;
-    text-align: center;
-    background: #222;
-    -webkit-border-radius: 23px;
-    -moz-border-radius: 23px;
-    border-radius: 23px;
-    opacity: .4;
-    filter: alpha(opacity=40);
-    padding:5px ;
-    font-size: .8em;
-
-}
-
-.carousel-control__top{
-    position:fixed;
-    top:0;
-    width:380px;
-    background-color:#3c648a;
+    background-color:#1d95a4;
     text-align: center;
     height:40px;
-    color:rgba(204,247,237,.8);
+    width:40px;
+    color:white;
     text-decoration:none;
-    padding:10px 24px;
+    padding:10px;
     font-family:Montserrat;
-    text-transform:uppercase;
     text-align:left;
-}
-.carousel-control__bottom{
-    position:fixed;
-    bottom:0;
-    width:380px;
-    background-color:#3c648a;
-    text-align: center;
-    height:40px;
-    color:rgba(204,247,237,.8);
-    text-decoration:none;
-    padding:10px 24px;
-    font-family:Montserrat;
-    text-transform:uppercase;
-    text-align:left;
+    margin:10px;
+    border-radius:20px;
+    display:block;
+    font-size:1.4em;
 }
 
-.carousel-control.right {
-    right: 15px;
-    left: auto;
+.carousel-control.home{
+    margin-bottom:40px;
 }
 
 .more {
@@ -713,3 +681,34 @@ svg {
    float: left;
    margin-top: -2px;
 }
+
+#navigation{
+    height:100vh;
+    width:40px;
+    position:fixed;
+    top:0;
+    left:380px;
+}
+
+#project-title{
+    position:fixed;
+    top:0;
+    width:380px;
+    margin:0;
+    padding:24px;
+
+}
+
+h1#project-title{
+    font-size:1em;
+    background-color:#1d95a4;
+    color:white;
+}
+
+.navigation-container{
+    position: absolute;
+  top: 30%;
+  height: 100px;
+
+}
+
